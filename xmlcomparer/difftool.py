@@ -20,6 +20,9 @@ class DiffTool(object):
 
     def diff_bytes(self, bstr1, bstr2):
         """First writes the strings to temporary files, then compares the files"""
+        print(bstr1.decode())
+        print(bstr2.decode())
+        return
         file1 = tempfile.NamedTemporaryFile()
         file1.write(bstr1)
         file1.flush()
